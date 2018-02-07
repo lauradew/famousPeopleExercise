@@ -20,7 +20,8 @@ knex.insert([
   {first_name: first,
   last_name: last,
   birthdate: birth}])
-  .into('famous_people').then(function () {
+  .into('famous_people')
+  .then(function () {
     console.log("done");
   })
 knex.destroy();
